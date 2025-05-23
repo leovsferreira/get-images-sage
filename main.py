@@ -8,7 +8,7 @@ def main():
             snapshot = camera.snapshot()
         
         timestamp = snapshot.timestamp
-        
+        print("snapshot taken")
         snapshot.save("snapshot.jpg")
         plugin.upload_file("snapshot.jpg", timestamp=timestamp)
 
