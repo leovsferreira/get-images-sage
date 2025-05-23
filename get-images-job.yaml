@@ -1,0 +1,14 @@
+
+---
+name: get-images-job
+plugins:
+- name: get-images
+  pluginSpec:
+    image: registry.sagecontinuum.org/lferr10/get-images:0.1.0
+    args: []
+nodes:
+  W042: true
+scienceRules:
+- "schedule(get-images): cronjob('get-images', '* * * * *')"
+successCriteria:
+- WallClock(1d)
