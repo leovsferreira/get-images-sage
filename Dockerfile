@@ -14,9 +14,10 @@ WORKDIR /app
 COPY requirements.txt .
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+RUN python3 -c "import ultralytics; print('✓ ultralytics installed successfully')"
 RUN mkdir -p /tmp/yolo_cache
 ENV YOLO_CONFIG_DIR=/tmp/yolo_cache
-RUN python3 -c "from ultralytics import YOLO; model = YOLO('yolov8n.pt'); print('YOLO model downloaded and cached successfully')"
+RUN python3 -c "from ultralytics import YOLO; model = YOLO('yolov8n.pt'); print('✓ YOLO model downloaded and cached successfully')"
 
 COPY . .
 
