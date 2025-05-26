@@ -1,13 +1,16 @@
-name: "get-images"
-version: "0.1.0"
-description: "get images from node"
+name: get-images
+version: 0.1.0
+description: get images from node
 keywords: ""
-authors: "Leonardo Ferreira"
+authors: Leonardo Ferreira
 collaborators: ""
 funding: ""
 license: ""
-homepage: "https://github.com/leovsferreira/get-images-sage"
+homepage: https://github.com/leovsferreira/get-images-sage
 source:
   architectures:
-    - "linux/amd64"
-    - "linux/arm64"
+    - linux/amd64
+    - linux/arm64
+  url: https://github.com/leovsferreira/get-images-sage
+  branch: main
+namespace: lferr10
