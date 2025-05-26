@@ -6,7 +6,7 @@ authors: "Leonardo Ferreira"
 collaborators: ""
 funding: ""
 license: ""
-homepage: "https://github.com/leovsferreira/get-images-sage.git"
+homepage: "https://github.com/leovsferreira/get-images-sage"
 source:
   architectures:
     - "linux/amd64"
