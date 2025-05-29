@@ -3,8 +3,8 @@ from waggle.data.vision import Camera
 
 def main():
     with Plugin() as plugin:
-        with Camera() as camera:
-            snapshot = camera.snapshot("bottom_camera")
+        with Camera("bottom_camera") as camera:
+            snapshot = camera.snapshot()
             timestamp = snapshot.timestamp
             print("snapshot taken")
             snapshot.save("snapshot.jpg")
