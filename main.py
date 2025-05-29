@@ -10,3 +10,6 @@ def main():
         print("snapshot taken")
         snapshot.save("snapshot.jpg")
         plugin.upload_file("snapshot.jpg", timestamp=timestamp)
+
+if __name__ == "__main__":
+    main()
