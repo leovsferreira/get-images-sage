@@ -16,6 +16,4 @@ RUN pip3 install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-RUN mkdir -p /app/shared_images
-
 CMD ["python3", "main.py"]
