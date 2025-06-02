@@ -4,6 +4,7 @@ import json
 import time
 import pytz
 from datetime import datetime
+import sys
 
 def get_chicago_time():
     chicago_tz = pytz.timezone('America/Chicago')
@@ -33,6 +34,8 @@ def main():
             }
             
             plugin.publish("plugin.timing", json.dumps(timing_data), timestamp=timestamp)
+
+    sys.exit(0)
 
 if __name__ == "__main__":
     main()
